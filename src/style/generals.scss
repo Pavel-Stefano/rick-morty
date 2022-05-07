@@ -1,0 +1,40 @@
+// NODE MODULS
+// importo il scss da bootstrap
+// @import "/node_modules/bootstrap/scss/bootstrap.scss";           // oppure
+@import "~bootstrap/scss/bootstrap.scss";
+
+// FONT
+// installare font da fontsoure.org  npm install @fontsource/ nome del font  --> controlla se c'è in package.json tra le dependencies
+@import "~@fontsource/montserrat/index.css";
+@import "~@fontsource/montserrat/700.css";
+
+// STYLES
+@import "./vars.scss";
+
+
+body {
+    font-family: $main-font;
+    color: $text-color;
+    background-image: linear-gradient(
+        to left,
+        transparent 0px,
+        transparent 20px,
+        rgba(#000, 0.02) 20px,
+        rgba(#000, 0.02) 40px
+    ),
+    linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 20px,
+        rgba(#000, 0.02) 20px,
+        rgba(#000, 0.02) 40px
+    );
+    background-size: 40px, 100% 40px;
+}
+
+
+
+
+
+// axios va importato solo dove ne ho bisogno
+
